@@ -45,23 +45,8 @@ have
 -1s demarcate  the rows. If there  are more  than 1 contiguous 
 black segments in a row then we store the start and end indices of each segment in order, as for rows 4, 9 and 10. 
 
-implemented the following interface:
+Implemented the interface(see CompressedImageInterface.java):
 
-public interface compressedImage {
-public void compressedImage(String filename);
-public void compressedImage(boolean[][] grid, int width,
-int height);
-public boolean getPixelValue(int x, int y) throws pixelOutOfBoundException;
-public void setPixelValue(int x, int y, boolean val) throws pixelOutOfBoundException;
-public int[] numberOfBlackPixels();
-public void invert();
-public void performAnd(compressedImage img) throws boundsMismatchException;
-public void performOr(compressedImage img) throws boundsMismatchException;
-public void performXor(compressedImage img) throws boundsMismatchException;
-public String toS
-tringUnCompressed();
-public String toStringCompressed();
-}
 
 Here,  compressedImage  constructors may either take  in a 2D array of 0s and 1s, or a name of the file that has the 
 same  representation  written  in  the  textfile.  getPixelValue  and  setPixelValue  are  operations  to  access  and  modify 
