@@ -45,7 +45,7 @@ have
 -1s demarcate  the rows. If there  are more  than 1 contiguous 
 black segments in a row then we store the start and end indices of each segment in order, as for rows 4, 9 and 10. 
 
-Your job is to implement the following interface:
+implemented the following interface:
 
 public interface compressedImage {
 public void compressedImage(String filename);
